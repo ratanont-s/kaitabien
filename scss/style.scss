@@ -5,3 +5,14 @@
 @import './header';
 @import './footer';
 @import './landing';
+
+html,
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
