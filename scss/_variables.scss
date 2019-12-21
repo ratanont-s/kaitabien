@@ -1,0 +1,23 @@
+// Colors
+$primary:#58a96c;
+$primary-light:#88ba84;
+
+$vip:#c3ba98;
+$serial: #27b682;
+
+$theme-colors: ("vip": $vip,
+    "serial": $serial,
+);
+
+$enable-gradients: true;
+$enable-responsive-font-sizes: true;
+
+// Background
+$bg-gd-primary: linear-gradient(to right, $primary, $primary-light);
+
+// Links
+$link-hover-decoration: none;
+
+// Typography
+$font-family-base: 'Kanit',
+sans-serif;

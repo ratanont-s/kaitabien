@@ -1,0 +1,55 @@
+.card-vehicle-registration {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 5px rgba(black, .1);
+    border-radius: 10px;
+    border-width: 0;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    text-align: center;
+    color: $body-color;
+    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    @include transition($transition-base);
+
+    .card {
+
+        &-id {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        &-price {
+            color: $blue;
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(black, .1);
+        @include transition($transition-base);
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+
+        .card {
+            &-id {
+                font-size: 1rem;
+            }
+
+            &-price {
+                font-size: .8rem;
+            }
+
+            &-city {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}

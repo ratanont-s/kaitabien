@@ -1,0 +1,85 @@
+section {
+    .section {
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $border-color;
+            padding: .75rem 0;
+            margin-bottom: 1rem;
+
+            h4 {
+                font-weight: 300;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // Search
+    &#search {
+        padding: 1rem 0;
+        background-color: $light;
+
+        .card {
+            border-width: 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(black, .1);
+
+            &-header {
+                background-color: transparent;
+                color: $white;
+                padding-top: 0;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    padding: .375rem 1.5rem;
+                    min-height: 45px;
+                    background-image: $bg-gd-primary;
+
+                    i {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 2.5rem 0;
+
+            .card {
+                &-header {
+                    border-bottom-width: 0;
+
+                    span {
+                        display: inline-flex;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contact
+    &#contact {
+        .list-contact {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                display: flex;
+                margin-bottom: 1.25rem;
+
+                .icon {
+                    background-image: $bg-gd-primary;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    margin-right: 1.25rem;
+                }
+            }
+        }
+    }
+}

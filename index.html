@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KAITABIEN</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/990479688a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="sticky-top bg-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="KAITABIEN">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">หมวดหมูทะเบียน</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">เอกสารจำเป็น</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">บทความ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">อัลบั้มรูป</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">หลักเลขศาสตร์</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ติดต่อเรา</a>
+                        </li>
+
+                        <!-- Dropdown menu example -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div id="carouselBanner" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/banner-lg-01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/banner-lg-01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search -->
+        <section id="search">
+            <div class="container">
+                <div class="card">
+                    <h5 class="card-header px-lg-5">
+                        <span><i class="fas fa-search"></i> ค้นหาเลขทะเบียนรถ</span>
+                    </h5>
+                    <div class="card-body px-lg-5">
+                        <form action="" class="row">
+                            <div class="form-group col-6 col-lg-2">
+                                <label for="">ระบุตัวอักษร</label>
+                                <input type="text" class="form-control" placeholder="ระบุตัวอักษร">
+                            </div>
+                            <div class="form-group col-6 col-lg-2">
+                                <label for="">ตัวเลข</label>
+                                <input type="number" class="form-control" placeholder="ระบุตัวเลข">
+                            </div>
+                            <div class="form-group col-12 col-lg-2">
+                                <label for="">หมวดหมู่</label>
+                                <select name="" id="" class="form-control">
+                                    <option value="">หมวดหมู่</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-lg">
+                                <label for="">ช่วงราคา</label>
+                                <div class="form-row">
+                                    <div class="col-12 col-lg mb-3 mb-lg-0">
+                                        <input type="text" class="form-control" placeholder="ช่วงราคาสูงสุด">
+                                    </div>
+                                    <div class="col-lg-auto align-self-center d-none d-lg-block">-</div>
+                                    <div class="col-12 col-lg">
+                                        <input type="text" class="form-control" placeholder="ช่วงราคาต่ำสุด">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-12 col-lg-2 align-self-end">
+                                <button type="submit" class="btn btn-primary btn-block">ค้นหา</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container pt-3 pb-5">
+            <div class="row">
+                <div class="col-lg">
+                    <!-- ทะเบียนสวย VIP -->
+                    <section class="section mb-4">
+                        <div class="section-header">
+                            <h4><span class="badge badge-vip text-white">VIP</span> ทะเบียนสวย VIP</h4>
+                            <a href="#" class="text-dark">ดูทั้งหมด</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- ทะเบียนสวย เลขเรียง -->
+                    <section class="section mb-4">
+                        <div class="section-header">
+                            <h4><span class="badge badge-serial">123</span> ทะเบียนสวย เลขเรียง</h4>
+                            <a href="#" class="text-dark">ดูทั้งหมด</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-3">
+                                <a href="#" class="card card-body card-vehicle-registration"
+                                    style="background-image: url('./assets/img/purple.png');">
+                                    <h4 class="card-id">7กฒ 234</h4>
+                                    <h5 class="card-price">63,000THB.</h5>
+                                    <span class="card-city">กรุงเทพมหานคร</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-auto">
+                    <!-- Contact -->
+                    <section class="section" id="contact">
+                        <div class="section-header">
+                            <h4>ติดต่อ</h4>
+                        </div>
+                        <ul class="list-contact">
+                            <li>
+                                <span class="icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                                <div class="text">
+                                    <h6 class="mb-0">088-038-8888</h6>
+                                    <h6 class="mb-0">088-208-8888</h6 class="mb-0">
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i class="fab fa-line"></i>
+                                </span>
+                                <div class="text">
+                                    <small class="text-muted">LINE ID</small>
+                                    <h6 class="mb-0">tabienpramool</h6 class="mb-0">
+                                </div>
+                            </li>
+                        </ul>
+                        <hr>
+                        <!-- Facebook page -->
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaitabien%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="340" height="340" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media"></iframe>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container py-5">
+            <ul class="nav justify-content-center d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">หน้าแรก</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">หมวดหมูทะเบียน</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">เอกสารจำเป็น</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">บทความ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">อัลบั้มรูป</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">หลักเลขศาสตร์</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ติดต่อเรา</a>
+                </li>
+            </ul>
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                2018. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

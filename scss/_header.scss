@@ -1,0 +1,37 @@
+header {
+    .navbar {
+        &-toggler {
+            padding: 0;
+            border-width: 0;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .navbar {
+
+            &-brand {
+                margin-right: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: -1;
+
+                img {
+                    height: 37px;
+                }
+            }
+
+            &-nav {
+                padding-top: 1.5rem;
+            }
+        }
+
+        .nav {
+            &-link {
+                text-align: center;
+            }
+        }
+    }
+}
