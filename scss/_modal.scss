@@ -1,0 +1,31 @@
+.modal {
+    .card-vehicle-registration {
+        border-width: 0;
+        border-radius: 0;
+
+        &:hover {
+            transform: scale(1);
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-down(sm) {
+
+            .card {
+                &-id {
+                    font-size: 2rem;
+                }
+
+                &-price {
+                    font-size: 1.75rem;
+                }
+
+                &-city {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
