@@ -22,12 +22,30 @@
         &-id {
             font-weight: bold;
             margin-bottom: 0;
+            font-family: Tahoma;
+            font-size: 18px;
         }
 
         &-price {
             color: $blue;
             margin-bottom: 0;
+            font-family: Tahoma;
+            font-size: 13px;
+            font-weight: bold;
         }
+
+        &-city {
+            font-family: Tahoma;
+            font-size: 11px;
+        }
+    }
+
+    .badge {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        border-radius: 10rem;
+        font-weight: normal;
     }
 
     &:hover {

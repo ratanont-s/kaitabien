@@ -8,6 +8,25 @@ header {
         }
     }
 
+    .header {
+        &-bottom {
+            background-image: $bg-gd-primary;
+
+            .nav {
+                &-link {
+                    padding-left: 0.25rem;
+                    padding-right: 0.25rem;
+                    font-size: 0.75rem;
+                    color: rgba(white, .75);
+
+                    .icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
     @include media-breakpoint-down(md) {
         .navbar {
 
